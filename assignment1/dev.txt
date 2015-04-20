@@ -1,0 +1,13 @@
+Using forked version of virtualenv:
+-First create virtual environment:
+virtualenv .env
+-Then edit scripts to use #!/usr/bin/env python instead of hard coded version:
+virtualenv .env --relocatable
+-Then activate virtual environment:
+source .env/bin/activate
+-Then install requirements:
+pip install -r requirments
+-Then edit scripts again to use #!/usr/bin/env python instead of hard coded version:
+virtualenv .env --relocatable
+-After working:
+deactivate
